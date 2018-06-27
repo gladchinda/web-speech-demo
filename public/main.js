@@ -222,8 +222,16 @@ jQuery(function($) {
       }, 200);
 
     } else {
-      fetchNewQuote();
-      console.log('Text-to-speech not supported.');
+			let message = 'Text-to-speech not supported by your browser.';
+
+			// Create the browser notice element
+			let notice = $('<div class="w-100 py-4 bg-danger font-weight-bold text-white position-absolute text-center" style="bottom:0; z-index:10">' + message + '</div>');
+
+			fetchNewQuote();
+			console.log(message);
+
+			// Display non-support info on DOM
+			$(document.body).append(notice);
     }
   }
 
