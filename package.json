@@ -1,17 +1,14 @@
 {
   "name": "web-speech-app",
   "version": "1.0.0",
-  "private": true,
-  "homepage": "https://gladchinda.github.io/text-to-speech/",
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "gh-pages": "^1.2.0"
+    "express": "^4.16.3"
   },
   "scripts": {
-    "start": "node server.js",
-    "deploy": "gh-pages"
+    "start": "node server.js"
   },
   "author": "Glad Chinda <gladxeqs@gmail.com>"
 }
